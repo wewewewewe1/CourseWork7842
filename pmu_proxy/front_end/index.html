@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PMU Visualisation Dashboard</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f9fc;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .selector {
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+      .charts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .chart-card {
+        width: 45%;
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- React 入口脚本 -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

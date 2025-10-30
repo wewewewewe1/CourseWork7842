@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"cd \"\"E:\\7842\\Python Script\\pmu_proxy\\front_end\"\" && npm run dev\")",
+      "Bash(python verify_system.py:*)",
+      "Bash(python -c:*)",
+      "Bash(python -m py_compile:*)",
+      "Bash(python test_warning_integration.py:*)",
+      "Bash(python check_fft_data.py:*)",
+      "Bash(curl:*)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

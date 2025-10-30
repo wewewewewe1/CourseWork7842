@@ -9,6 +9,7 @@ PORT = 8086
 # 库名（你已确认）
 SOURCE_DB = "pmu_data"       # 连续数据（由 openHistorian 写入）
 TARGET_DB = "pmu_alerts"     # 报警/事件窗口（由本服务写入）
+ANALYSIS_DB = "pmu_analysis" # 分析结果（FFT, SNR, 故障检测等）
 MEAS_OUT  = "pmu_monitor_alerts"
 
 # 监测信号与阈值
@@ -31,3 +32,7 @@ SAMPLE_INTERVAL = 0.05       # 采样时间粒度（决定缓存长度）
 WINDOW_BEFORE = 5            # 报警前窗口
 WINDOW_AFTER  = 5            # 报警后窗口
 POLL_INTERVAL = 0.5          # 轮询检测周期（秒）
+
+# 分析模块配置
+ANALYSIS_INTERVAL = 5.0      # 分析运行间隔（秒）
+ANALYSIS_SAMPLE_RATE = 1.0   # PMU采样率（Hz）- 根据实际调整
